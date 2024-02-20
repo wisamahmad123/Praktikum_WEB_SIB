@@ -12,15 +12,32 @@ body {
 
 /*Latihan 1*/
 .container-satu {
-    width: 800px;
+    width: 1000px;
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-image: url('gmbar.jpg');
+    background-repeat: repeat;
+}
+.kolom-utama{
+    width: 630px;
+    background-color: rgb(255, 246, 246);
 }
 
 .sidebar-satu {
-    width: ;
+    width: 150px;
+    background-color: rgb(255, 248, 248);
+    margin-right: 10px;
 }
+
+.sidebar-dua {
+    width: 160px;
+    background-color: rgb(255, 237, 237);
+    margin-left: 10px;
+}
+
 
