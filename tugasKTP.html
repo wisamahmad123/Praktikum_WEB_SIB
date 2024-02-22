@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan FlexBox</title>
+        <link rel="stylesheet" href="styleKTP.css">
+        <style>
+            .container {
+                width: 550px;
+                height: 350px;
+                border-radius: 10%;
+                margin: 50px auto;
+
+                padding: 20px;
+                box-sizing: border-box;
+                display: flex;
+                background-image: url('ktpDepan.jfif');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .container-dua {
+                width: 500px;
+                margin: 0;
+                border: transparent;
+                box-sizing: border-box;
+                padding: 5px;
+                display: grid;
+                grid-template-areas: "header header"
+                    "aside main"
+                    "aside main";
+                grid-template-columns: 1.5fr 0.7fr;
+                grid-template-rows: 0.5fr 1fr 1.3fr;
+            }
+            header {
+                grid-area: header;
+                background-color: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: small;
+            }
+            aside {
+                grid-area: aside;
+                background-color: transparent;
+                padding: 0;
+                font-size: xx-small;
+            }
+            main {
+                padding-left: 40px;
+                grid-area: main;
+                box-sizing: border-box;
+                font-size: x-small;
+            }
+            .NIK {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: medium;
+            }
+            .biodata {
+                font-family: Arial, Helvetica, sans-serif;
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-dua">
+                <header>
+                    <table>
+                        <tr>
+                            <th>PROVINSI JAWA TIMUR <br> KOTA BLITAR</th>
+                        </tr>                      
+                    </table>   
+                </header>
+                <aside>
+                    <div class="NIK">
+                        <table>
+                            <th>NIK </th>
+                            <th style="padding-left: 35px;">: 35720302250002 </th> 
+                        </table> 
+                    </div>
+                <div class="biodata">
+                    <table>
+                        <tr>
+                            <td>Nama </td>
+                            <td>: WISAM AHMAD RISQI ARMANA</td>
+                        </tr>
+                        <tr>
+                            <td>Tempat/Tgl Lahir </td>
+                            <td>: BLITAR, 18-02-1998</td>
+                        </tr>
+                        <tr>
+                            <td>Kelamin </td>
+                            <td>: LAKI-LAKI </td>
+                            <td>Gol. Darah </td>
+                            <td>: B</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat </td>
+                            <td>: JL. PASTI CEPAT A7/B5</td>
+                        </tr>
+                        <tr>
+                            <td>RT/RW </td>
+                            <td>: 007/008</td>
+                        </tr>
+                        <tr>
+                            <td>Kel/Desa </td>
+                            <td>: PEGADUNGAN</td>
+                        </tr>
+                        <tr>
+                            <td>Kecamatan </td>
+                            <td>: KALIDERES</td>
+                        </tr>
+                        <tr>
+                            <td>Agama </td>
+                            <td>: ISLAM</td>
+                        </tr>
+                        <tr>
+                            <td>Status Pekerjaan </td>
+                            <td>: PEGAWAI SWASTA</td>
+                        </tr>
+                        <tr>
+                            <td>Kewarganegaraan </td>
+                            <td>: WNI</td>
+                        </tr>
+                        <tr>
+                            <td>Berlaku Hingga </td>
+                            <td>: 22-02-2024</td>
+                        </tr>
+                    </table>   
+                </div>
+                </aside>
+                <main>
+                    <img src = "wajah.jfif" style="height: 150px; width: 120px;" >
+                    <table align="center">
+                        <tr>
+                            <td align="center">KOTA BLITAR<br> 22-02-2019</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="ttd-removebg-preview.png" style="height: 60px; width: 100px; align-items: center;">
+                            </td>
+                        </tr>
+                    </table>    
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
