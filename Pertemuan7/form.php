@@ -6,6 +6,7 @@
 </head>
 
 <body>
+    <!--membuat form cek email -->
     <h2>Form Input PHP</h2>
     <form method="post" action="proses_form.php">
         <label for="nama">Nama: </label>
