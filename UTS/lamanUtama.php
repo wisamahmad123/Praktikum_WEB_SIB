@@ -56,7 +56,7 @@
         <form action="lamanUtama.php" method="post">
             <div>
                 <label for="username">Username :</label>
-                <input type="text" id="username" name="username">
+                <input type="text" id="username" name="username" required>
             </div>
 
             <div class="pad">

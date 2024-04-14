@@ -28,7 +28,7 @@ button:hover {
     background-color: #0056b3;
 }
 body {
-    background-color: rgb(76, 45, 177);
+    background-image: url('img/arena.png');
 }
 label {
     display: inline-block;
