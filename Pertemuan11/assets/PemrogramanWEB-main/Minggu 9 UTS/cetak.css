@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgb(0, 14, 71), rgb(77, 181, 255));
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.kartu-member {
+    color: white;
+    background-image: linear-gradient(rgb(0, 21, 255), rgb(0, 0, 0), red);
+    width: 350px;
+    padding: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.gambar img {
+    width: 165px;
+    height: auto;
+    margin-left: 91px;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.kartu-member h2 {
+    text-align: center;
+    color: #fcfcfc;
+    margin-top: 0;
+}
+
+.kartu-member p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.Logout input[type="button"] {
+    float: inline-end;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1px;
+    background-color: #d14836;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Logout input[type="button"]:hover{
+    background-color: rgb(255, 126, 103);
+}
+
+.cooki{
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(rgb(255, 8, 0), rgb(37, 36, 36), rgb(108, 155, 255));
+    width: 400px;
+    padding: 10px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    margin: 0 auto;
+}

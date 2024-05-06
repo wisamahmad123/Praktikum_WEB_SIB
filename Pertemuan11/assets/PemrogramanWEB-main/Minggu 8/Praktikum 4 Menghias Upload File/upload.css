@@ -1,0 +1,58 @@
+/* Mangatur pada tampilan Kontainer form */
+.upload-form-container{ 
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Mengatur pada tampilan judul*/
+h2{
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Mangatur pada tampilan Kontainer input file */
+.file-input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.file-input{
+    display: none;
+}
+
+.file-label{
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Mangatur pada tampilan tombol unggah */
+.upload-button{
+    background: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5; /*Opacity untuk tampilan agar tampak pudar*/
+}
+
+.upload-button:disabled {
+    background: #ccc; /*Untuk mengganti warna ketika disabled */
+    cursor: not-allowed; /*Untuk mengganti style cursor ketika disabled */
+}
+
+/* Mangatur pada tampilan status unggah */
+.upload-status {
+    margin-top: 20px;
+    font-weight: bold;
+}

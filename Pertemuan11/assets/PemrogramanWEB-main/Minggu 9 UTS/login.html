@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MDHP Gym</title> 
+    <script src="proses_login.js"></script> 
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(rgb(11, 11, 11), rgb(99, 117, 252));
+            font-family: Arial, sans-serif;
+            color: #fef5f5;
+        }
+
+        .container {
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body {
+            width: 30%;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: white;
+        }
+
+        .gambar img {
+            width: 285px;
+            height: auto;
+            margin-left: 90px;
+            margin-right: auto;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+
+        .Welcome {
+            text-align: center;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .form1 {
+            color: rgb(255, 255, 255);
+            margin: auto;
+            align-items: center;
+            width: 300px;
+            padding: 17px;
+            background-color: rgb(7, 130, 254);
+            border-radius: 30px;
+            box-shadow: inset 5px 5px 3px rgb(0, 21, 244), 5px 5px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 30px);
+            margin-bottom: 8px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: auto;
+        }
+
+        input[type="button"] {
+            width: calc(50% - 30px);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1feb00;
+            cursor: pointer;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        input[type="button"]:hover{
+            background-color: rgb(219, 255, 112);
+        }
+
+        .tulisan {
+            border-radius: 15px;
+            color: black;
+            text-align: center;
+            width: 30%;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: rgb(161, 225, 238);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="body">
+            <div class="Welcome">
+                <h1>Welcome to MDHP Gym!</h1>
+                <h2><i>Mochammad Dicky Hanun Prasetyo (Fitness Center)</i></h2>
+            </div>
+            
+            <div class="gambar">
+                <img src="img/logo.jpg"> <br>
+            </div>
+            <div class="form1">   
+            <form method="POST" action="form.php">
+                <div class="tulisan">
+                <h4>Login Admin!</h4> 
+                </div>
+            <i class='bx bxs-user-circle'></i>
+            <input type="text" name="admin" id="admin" size="35" placeholder="Masukkan id admin" required> <br>
+            <i class='bx bxs-lock'></i>
+            <input type="password" name="input_password" class="input" id="input_password" size="35" placeholder="Password" required> <br>
+            <input type="button" value="Login" class="submit-btn" onclick="index()">
+            </form>
+            </div>
+            <p align="center">&copy; 2024 MDHP Gym<br></p>
+        </div>
+    </div>
+</body>
+</html>
+</html>
