@@ -1,18 +1,30 @@
 <?php
-if(session_status() === PHP_SESSION_NONE)
-session_start();
+    // Menginisialisasi sesi
+    if(session_status() === PHP_SESSION_NONE)
+        session_start();
 
-if(!empty($_SESSION['level'])) {
-    require 'config/koneksi.php' ;
-    require 'fungsi/pesan_kilat.php' ;
+    // Memeriksa apakah level pengguna sudah ada dalam sesi
+    if(!empty($_SESSION['level'])){
+        // Memuat file koneksi ke database
+        require 'config/koneksi.php';
+        // Memuat fungsi untuk pesan kilat (flash messages)
+        require 'fungsi/pesan_kilat.php';
 
-    include 'admin/template/header.php' ;
-    if(!empty($_GET['page'])) {
-        include 'admin/module/' . $_GET['page'] . '/index.php';
+        // Memuat bagian header dari template admin
+        include 'admin/template/header.php';
+
+        // Memuat halaman sesuai dengan parameter GET 'page'
+        if(!empty($_GET['page'])){
+            // Memuat halaman dari direktori module yang sesuai dengan parameter GET 'page'
+            include 'admin/module/' . $_GET['page'] . '/index.php';
+        } else {
+            // Jika parameter GET 'page' tidak ada, memuat halaman utama (home)
+            include 'admin/template/home.php';
+        }
+        // Memuat bagian footer dari template admin
+        include 'admin/template/footer.php';
     } else {
-        include 'admin/template/home.php';
+        // Jika level pengguna tidak tersedia dalam sesi, arahkan ke halaman login
+        header("Location: login.php");
     }
-    include 'admin/template/footer.php';
-} else {
-    header("Location: login.php");
-}
+?>
